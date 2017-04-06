@@ -315,20 +315,38 @@
 	min-height: 8em;
 	max-height: 8em;
 }
+.mapa{
+	width: 430px;
+    height: 430px;
+    position: relative;
+	}
+
 .mapa iframe{
-	border-radius: 500px;
+	border-radius: 500px !important;
 	background-color: #fff;
+	overflow: hidden !important;
+}
+
+.mapaa iframe{
+	border-radius: 1420px !important;
+	background-color: #fff;
+	overflow: hidden !important;
+}
+
+#map{
+	overflow: hidden !important;
 }
 
 .mapaa{
+	overflow: hidden !important;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    width: 430px;
-    height: 430px; 
+    width: 400px;
+    height: 400px; 
     background-color: #fff;
     border-radius: 100%;
-  	padding: 1%;
+  	padding: 2%;
   	-webkit-animation: bordercircle  0.8s forwards;
   	-moz-animation: bordercircle 0.8s forwards;
   	-o-animation: bordercircle 0.8s forwards;
@@ -338,8 +356,8 @@
 
 @keyframes bordercircle{
   from{
-    width: 430px;
-    height: 430px;
+    width: 400px;
+    height: 400px;
     background: #fff; 
   }
   to{
@@ -377,7 +395,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 450px;
+	width: 460px;
 	height: 450px;
 	border: 0px solid #ffffff;
 	border-radius: 500px;
@@ -391,7 +409,7 @@
 
 @keyframes bordermap{
   from{
-  	width: 450px;
+  	width: 460px;
 	height: 450px;
     border:  2px solid #ffffff;
   }
