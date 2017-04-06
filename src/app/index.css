@@ -203,7 +203,8 @@
 /*animación del circulo 25%*/
 .uno{
 	display: initial !important;
-    stroke-dasharray: 205;  
+    stroke-dasharray: 205; 
+    stroke-dashoffset: 0; 
     stroke-dashoffset: 205;
 	-webkit-animation: llenado  1s forwards;
   	-moz-animation: llenado 1s forwards;
@@ -212,7 +213,7 @@
   	animation-delay: 8.5s;
 }
 
-@-webkit-keyframes llenado{
+@keyframes llenado{
   from{
     stroke-dashoffset: 205;
   }
@@ -335,7 +336,7 @@
   	animation-delay: 0.8s;
 }
 
-@-webkit-keyframes bordercircle{
+@keyframes bordercircle{
   from{
     width: 430px;
     height: 430px;
@@ -388,7 +389,7 @@
 
 }
 
-@-webkit-keyframes bordermap{
+@keyframes bordermap{
   from{
   	width: 450px;
 	height: 450px;
@@ -486,7 +487,7 @@
   	animation-delay: .5s;
 }
 
-@-webkit-keyframes slid{
+@keyframes slid{
   from{
     left: -50vw;
   }
@@ -495,7 +496,7 @@
   }
 }
 
-@-webkit-keyframes slide{
+@keyframes slide{
   from{
     left: -50vw;
   }
@@ -504,7 +505,7 @@
   }
 }
 
-@-webkit-keyframes slider{
+@keyframes slider{
   from{
     left: -50vw;
   }
