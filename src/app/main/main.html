@@ -15,7 +15,7 @@
       <img src="../assets/images/logo-hed.png">
       <ul>
         <li>
-          <svg width=200 height=60>
+          <svg class="hid-sm" width=200 height=60  ng-click="gotoAnchor(0)">
             <defs>
               <linearGradient id="grad2" x1="25%" y1="40%" x2="50%" y2="50%" >
                 <stop offset="0" stop-color="#3228B1"/>
@@ -23,11 +23,22 @@
               </linearGradient>
             </defs>
             <text x=40 y=35 font-size="18px" font-family="helvetica">Características</text>
-            <rect x=2 y=1 rx=10 ry=10 width=197 height=54 fill="none" stroke="url(#grad2)" stroke-width=2 />     
+            <rect x=2 y=1 rx=10 ry=10 width=197 height=54 fill="none" stroke="url(#grad2)" stroke-width=2 />  
+          </svg>
+          <!-- este se muestra en responsive -->
+          <svg class="hid-lg show-sm" width=133 height=50 ng-click="gotoAnchor(0)">
+            <defs>
+              <linearGradient id="grad2" x1="25%" y1="40%" x2="50%" y2="50%" >
+                <stop offset="0" stop-color="#3228B1"/>
+                <stop offset="1" stop-color="#57A2FC"/>
+              </linearGradient>
+            </defs>
+            <text x=13 y=30 font-size="16px" font-family="helvetica">Características</text>
+            <rect x=2 y=1 rx=5 ry=5 width=130 height=45 fill="none" stroke="url(#grad2)" stroke-width=2 />     
           </svg>
         </li>
         <li>
-          <svg width=200 height=60>
+          <svg class="hid-sm" width=200 height=60 ng-click="gotoAnchor(1)">
             <defs>
               <linearGradient id="grad2" x1="25%" y1="40%" x2="50%" y2="50%" >
                 <stop offset="0" stop-color="#3228B1"/>
@@ -35,7 +46,18 @@
               </linearGradient>
             </defs>
             <text x=65 y=35 font-size="18px" font-family="helvetica">Contacto</text>
-            <rect x=2 y=1 rx=10 ry=10 width=197 height=54 fill="none" stroke="url(#grad2)" stroke-width=2 />              
+            <rect x=2 y=1 rx=10 ry=10 width=197 height=54 fill="none" stroke="url(#grad2)" stroke-width=2 />
+          </svg>
+          <!-- este se muestra en responsive -->
+          <svg class="hid-lg show-sm" width=133 height=50 ng-click="gotoAnchor(1)">
+            <defs>
+              <linearGradient id="grad2" x1="25%" y1="40%" x2="50%" y2="50%" >
+                <stop offset="0" stop-color="#3228B1"/>
+                <stop offset="1" stop-color="#57A2FC"/>
+              </linearGradient>
+            </defs>
+            <text x=33 y=30 font-size="16px" font-family="helvetica">Contacto</text>
+            <rect x=2 y=1 rx=5 ry=5 width=130 height=45 fill="none" stroke="url(#grad2)" stroke-width=2 />     
           </svg>
         </li>
       </ul>
@@ -51,7 +73,7 @@
           Precio de Lanzamiento:<br>
           <big>$2,480MXN</big>
         </p>
-        <div class="images-hed">
+        <div class="images-hed hid-sm">
           <div class="logos-hed">
             <img src="../assets/images/R.png">
             <img src="../assets/images/gas.png">
@@ -63,8 +85,8 @@
           </div>
         </div>
       </div>
-      <div class="down">
-        <img src="../assets/images/down.png">
+      <div class="down hid-sm">
+        <img class="hid-sm" src="../assets/images/down.png">
       </div>
       <div class="celular">
         <div class="info-cel">
@@ -91,7 +113,15 @@
             </div>
           </div>
         </div>
-      <div class="menu-lateral">
+        <div class="images-hed hid-lg show-sm">
+          <span>Descarga nuestra app gratis:</span>
+          <div>
+            <img src="../assets/images/apple.png">
+            <img src="../assets/images/android.png">
+          </div>
+        </div>
+        
+      <div class="menu-lateral hid-sm">
         <span ng-click="gotoAnchor(0)" title="Beneficios"></span>
         <span ng-click="gotoAnchor(1)" title="Contáctanos"></span>
         <span ng-click="gotoAnchor(2)" title="Siguenos"></span>
@@ -116,7 +146,7 @@
       <img src="../assets/images/certificaciones.png">
       <p>La Certificación del producto garantiza  la seguridad que ELGA G5 cumple con las exigencias marcadas en diferentes normas establecidas a nivel nacional e internacional.</p>
     </div>
-    <img class="img-up" src="../assets/images/up.png">
+    <img class="img-up hid-sm" src="../assets/images/up.png">
   </div>
   <div class="triangulo02"></div>
   <div class="contacto" id="anchor{{1}}">
@@ -124,17 +154,17 @@
       <big>Contáctanos</big>
       <form>
         <p>Nombre</p>
-        <input type="text" name="" placeholder="Tu nombre aquí...">
+        <input type="text" name="" placeholder="Tu nombre aquí..." ng-model="user.name">
         <p>Correo:</p>
-        <input type="text" name="" placeholder="Correo electrónico...">
+        <input type="text" name="" placeholder="Correo electrónico..." ng-model="user.email">
         <p>Teléfono:</p>
-        <input type="text" name="" placeholder="55 1234 5678...">
+        <input type="text" name="" placeholder="55 1234 5678..." ng-model="user.telephone">
         <p>Comentarios:</p>
-        <textarea placeholder="Tus comentarios..."></textarea>
+        <textarea placeholder="Tus comentarios..." ng-model="user.message"></textarea>
       </form>
       <div class="contact">
         <span>ventas@mirsa.com.ms</span>
-        <svg width=200 height=60>
+        <svg class="hid-sm" width=200 height=60>
          <defs>
            <linearGradient id="grad2" x1="25%" y1="40%" x2="50%" y2="50%" >
              <stop offset="0" stop-color="#3228B1"/>
@@ -144,12 +174,23 @@
           <text x=75 y=35 font-size="18px" font-family="helvetica">Enviar</text>
         <rect x=2 y=1 rx=10 ry=10 width=197 height=54 fill="none" stroke="url(#grad2)" stroke-width=2 />              
       </svg>
+      <!-- este se muestra en responsive -->
+      <svg class="hid-lg show-sm" width=133 height=50 ng-click="addPost()">
+        <defs>
+          <linearGradient id="grad2" x1="25%" y1="40%" x2="50%" y2="50%" >
+            <stop offset="0" stop-color="#3228B1"/>
+            <stop offset="1" stop-color="#57A2FC"/>
+          </linearGradient>
+        </defs>
+        <text x=43 y=30 font-size="16px" font-family="helvetica">Enviar</text>
+        <rect x=2 y=1 rx=5 ry=5 width=130 height=45 fill="none" stroke="url(#grad2)" stroke-width=2 />     
+      </svg>
       </div>
     </div>
     <div class="border-mapa">
       <div id="bormap">
         <div class="mapa" id="map">
-            <iframe  id="player" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7520.907637088324!2d-99.17399299301051!3d19.522120729193613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f4bf11bf738a890!2sMedidores+Internacionales+Rochester+S.A+de+C.V.!5e0!3m2!1ses-419!2smx!4v1490994590799" width="430" height="430" style="border:0; border-radius: 500px;" allowfullscreen></iframe>
+            <iframe  id="player" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7520.907637088324!2d-99.17399299301051!3d19.522120729193613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f4bf11bf738a890!2sMedidores+Internacionales+Rochester+S.A+de+C.V.!5e0!3m2!1ses-419!2smx!4v1490994590799" height="400" width="400" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -168,18 +209,22 @@
   </div> -->
   <div class="footer" id="anchor{{2}}">
     <div class="legal">
+      <ul class="hid-lg">
+        <li class="social"><img src="../assets/images/facebook.png"><img src="../assets/images/instagram.png"></li>
+      </ul>
       <ul>
         <li>Politicas de privacidad</li>
-        <li>|</li>
+        <li class="hid-sm">|</li>
+        <li>&#65293;</li>
         <li>Términos y condiciones</li>
-        <li class="social"><img src="../assets/images/facebook.png"><img src="../assets/images/instagram.png"></li>
+        <li class="social hid-sm"><img src="../assets/images/facebook.png"><img src="../assets/images/instagram.png"></li>
       </ul>
       <p><small>Calle 26-A no.6, Parque Industrial Vallejo San Pablo Xalpa, Tlalnepantla, Estado de México, C.P. 54170</small></p>
     </div>
-    <div>
+    <div class="hid-sm">
       <img src="../assets/images/logo-foot.png">
     </div>
-    <div class="app">
+    <div class="app hid-sm">
       <img src="../assets/images/apple.png">
       <img src="../assets/images/android.png">
     </div>

@@ -322,9 +322,18 @@
 	}
 
 .mapa iframe{
+	border: 0px; 
+	border-radius: 500px; 
+	height: 100px !important; 
+	width: 100px !important;
 	border-radius: 500px !important;
 	background-color: #fff;
 	overflow: hidden !important;
+}
+#play{
+	border-radius: 500px; 
+	height: 1000px !important; 
+	width: 1000px !important;
 }
 
 .mapaa iframe{
