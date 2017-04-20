@@ -70,8 +70,17 @@
 
   
   .images-hed{
-    width: 75%;
-    padding-left: 20%;
+    width: 90%;
+    text-align: center;
+    padding-left: 5%;
+    margin-top: 5%;
+    color: #0A1835;
+    font-weight: 600;
+    font-size: 21px;
+  }
+
+  .images-hed img{
+    margin-top: 7%; 
   }
 
   .celular{
@@ -79,6 +88,11 @@
     background-position: 2vw center;
     background-size: 96vw 100%;
     padding-bottom: 98vh;
+  }
+
+  .celular p b{
+    margin-top: -10%;
+    margin-bottom: 20%;
   }
 
   .info-cel{
@@ -199,7 +213,7 @@
   }
   .contact span{
     color: #1BD7FF;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: lighter;
   }
 
@@ -254,13 +268,15 @@
   }
   .legal ul li{
     list-style: none;
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 1em;
   }
 
   .legal ul li img{
-    margin-right:  3%;
-    margin-left: 16%;
+    width: 30px;
+    height: 30px;
+    margin-right:  0%;
+    margin-left: 20%;
   }
 
   #maquina{
