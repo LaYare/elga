@@ -1,11 +1,9 @@
-.hid-lg{
-  display: none;
-}
-
 @media (max-width: 768px) {
+
   .hid-sm{
     display: none !important;
   }
+
   .show-sm{
     display: block !important; 
   }
@@ -29,9 +27,11 @@
     align-items: center;
     justify-content: center;
   }
+
   .menu > img{
     margin-left: 0em;
   }
+
   .menu ul{
     margin-top: 1em;
     padding-left: 0px;
@@ -49,10 +49,11 @@
     justify-content: space-between;
   }
 
-  .informacion , .celular{
-    width: 93%;
+  .informacion {
+    width: 95%;
     height: 100vh;
   }
+
   .informacion{
     flex-direction: column;
     min-height: 55vh;
@@ -64,6 +65,7 @@
     font-size: 22px;
     line-height: 38px;
   }
+
   .informacion small{
     line-height: 50px;
   }
@@ -73,7 +75,7 @@
     width: 90%;
     text-align: center;
     padding-left: 5%;
-    margin-top: 5%;
+    margin-top: 0%;
     color: #0A1835;
     font-weight: 600;
     font-size: 21px;
@@ -85,53 +87,65 @@
 
   .celular{
     background-image: url('../assets/images/contenedor2.png');
-    background-position: 2vw center;
-    background-size: 96vw 100%;
-    padding-bottom: 98vh;
+    background-position: center;
+    background-size: 95vw 100vh;
+    min-height: 100vh;
   }
 
   .celular p b{
-    margin-top: -10%;
-    margin-bottom: 20%;
+    margin-top: -3%;
+    margin-bottom: 10%;
   }
 
   .info-cel{
     width: 100%;
-    padding-top: 30%;
+    padding-top: 3.5em;
+    padding-bottom: 7em;
   }
 /*seccion de beneficios*/
   .triangulo01 {
     margin-top: 150%; 
   }
+
   .triangulo02 {
     margin-top: -1px; 
   }
+
   .beneficios{
     margin-top: -1px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 180vh;
+    height: 183vh;
     width: 100vw;
+    font-size: 18px;
+    padding-top: 25%;
+    padding-bottom: 35%;
   }
+
   .beneficios div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: static;
     height: 50%;
-    max-width: 90vw;
-    left: -100vw;
+    width: 95vw;
+    padding: 0%;
+    margin-top: 0px;
+    left: 3vw;
+    border: 1px solid transparent;
   }
+
   .beneficios div p{
     font-weight: lighter;
   }
 
   .instalacion{
-    margin-top: -110vw;
+    margin-top: -130%;
   }
 
   .certificados{
-    margin-top: 110vw;
+    margin-top: 350px;
   }
 
   .contacto{
@@ -140,17 +154,21 @@
     flex-direction: column;
     justify-content: space-around;
   }
+
   .formulario{
     width: 90%;
     padding-left: 5%;
   }
+
   .formulario big{
     font-size: 30px;
   }
+
   .formulario p{
     font-size: 15px;
     line-height: 40px;
   }
+
   .formulario input, textarea{
     width: 100%;
     height: 1.8em;
@@ -211,6 +229,7 @@
     align-items: center;
     margin-top: 2%;
   }
+
   .contact span{
     color: #1BD7FF;
     font-size: 16px;
@@ -266,6 +285,7 @@
     width: 100%;
     justify-content: space-around;
   }
+
   .legal ul li{
     list-style: none;
     font-size: 13px;
@@ -287,56 +307,18 @@
   /*animacion encadenada*/
 
   .instalacion{
-    -webkit-animation: slider  1s forwards;
-      -moz-animation: slider 1s forwards;
-      -o-animation: slider 1s forwards;
-      animation: slider 1s forwards;
-      animation-delay: 6.5s;
+    left: 103vw;
+    animation:  none;
   }
 
   .calidad{
-    border-left: 0px solid rgba(0,0,0,0.1); 
-    border-right: 0px solid rgba(0,0,0,0.1);
-    -webkit-animation: slide  1s forwards;
-      -moz-animation: slide 1s forwards;
-      -o-animation: slide 1s forwards;
-      animation: slide 1s forwards;
-      animation-delay: 9s;
+    left: 103vw;
+    animation: none;
   }
 
   .certificados{
-    -webkit-animation: slid  1s forwards;
-      -moz-animation: slid 1s forwards;
-      -o-animation: slid 1s forwards;
-      animation: slid 1s forwards;
-      animation-delay: 11.5s;
+    left: 103vw;
+    animation: none;
   }
-
-  @keyframes slid{
-    from{
-      left: -100vw;
-    }
-    to{
-      left: 3vw;
-    }
-  }
-
-  @keyframes slide{
-    from{
-      left: -100vw;
-    }
-    to{
-      left: 3vw;
-    }
-  }
-
-  @keyframes slider{
-    from{
-      left: -100vw;
-    }
-    to{
-      left: 3vw;
-    }
-  }
-
 }
+

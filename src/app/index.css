@@ -540,5 +540,8 @@
     left: 3vw;
   }
 }
-
-
+@media (min-width: 769px) {
+	.hid-lg{
+	  display: none;
+	}
+}
