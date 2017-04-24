@@ -27,15 +27,12 @@
     $scope.user = {};
 
     $scope.addPost = function () {
-       // $scope.user.page = "mellowventures.mx";
-       $scope.user.name = " ";
-       $scope.user.email = " ";
-       $scope.user.telephone = " ";
-       $scope.user.message = " ";
+       
 
-       $http.post("http://emailapi.mellow.online/api/general",$scope.user)
+       $http.post("http://emailapi.mellow.online/api/hackContacts",$scope.user)
            .success(function (data, status, headers, config) {
                $window.location.reload();
+               console.log(data);
            })
            .error(function (data, status, header, config) {
                 console.log(data);

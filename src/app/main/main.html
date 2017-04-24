@@ -159,13 +159,13 @@
         <p>Correo:</p>
         <input type="text" name="" placeholder="Correo electrónico..." ng-model="user.email">
         <p>Teléfono:</p>
-        <input type="text" name="" placeholder="55 1234 5678..." ng-model="user.telephone">
+        <input type="text" name="" placeholder="55 1234 5678..." ng-model="user.lastName">
         <p>Comentarios:</p>
         <textarea placeholder="Tus comentarios..." ng-model="user.message"></textarea>
       </form>
       <div class="contact">
         <span>ventas@mirsa.com.mx</span>
-        <svg class="hid-sm" width=200 height=60>
+        <svg class="hid-sm" width=200 height=60 ng-click="addPost(user)">
          <defs>
            <linearGradient id="grad2" x1="25%" y1="40%" x2="50%" y2="50%" >
              <stop offset="0" stop-color="#3228B1"/>
